@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="content">
+	<p>****兼容至ie 10（ie 9 及更早版本不支持 transition 属性。）****</p>
+	<div id="demo1">
+		<!-- 导航hover效果 -->
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">文章</a></li>
+			</ul>
+		</nav>
+	</div>
+	<p>「&nbsp;&nbsp;hover添加底部托盘效果&nbsp;&nbsp;」</p>
+	<div id="demo2">
+		<!-- 边框穿梭效果 -->
+		<div class="demo2-list">
+			<ul>
+				<li><a href="#">这是选项一</a></li>
+				<li><a href="#">这是选项二</a></li>
+			</ul>
+		</div>
+	</div>
+	<p>
+		「&nbsp;&nbsp;hover边框穿梭效果&nbsp;&nbsp;」<br/>
+		——不足：两个角落留下1px的痕迹（高宽度0时的边框）——
+	</p>
+	<div id="demo3">
+		<!-- 选中扩散效果 -->
+		<div class="demo3-list">
+			<ul>
+				<li><a href="#">First Item</a></li>
+				<li><a href="#">Other Item</a></li>
+			</ul>
+		</div>
+	</div>
+	<p>
+		「&nbsp;&nbsp;hover扩散标记效果&nbsp;&nbsp;」<br/>
+		——若需要动画自适应变宽，可a的宽度用padding灵活调整——
+	</p>
+	<div id="demo4">
+		<!-- 搜索框弹出效果 -->
+		<!-- 未解决缺陷，内部图标遮挡input，阻止动画生成。 -->
+		<div class="search-bar">
+			<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;点击以保持搜索框">
+			<span class="fa fa-search"></span>
+			<span class="tips">鼠标移入图标中激活</span>
+		</div>
+	</div>
+    <p>
+    	「&nbsp;&nbsp;hover图标搜索框自动弹出效果&nbsp;&nbsp;」<br/>
+		——存在问题，内部图标遮挡hover导致动画取消——
+    </p>
+	<div id="demo5">
+		<!-- 选中元素框特效（下移，层叠） -->
+		<div class="demo5-box">
+			<img src="img1.jpg" title="moved down">
+			<div class="text-box">
+				<h3>我在下移噢</h3>
+				<p>在我正在下移的同时，下面的图片也稍微做了下移动动作以让出位置噢。</p>
+			</div>
+		</div>
+	</div>
+	<p>
+	「&nbsp;&nbsp;hover元素滑移动画效果&nbsp;&nbsp;」<br/>
+	——背景图片遮罩，利用降低图片透明度实现——
+	</p>
+	<div id="demo6">
+		<!-- 炫酷特效 -->
+		<div class="demo6-box">
+			<div class="img-box">
+				<img src="img3.jpg" title="show up">
+				<span>
+					*****<br/>
+					Im explanation<br/>
+					REad MOre
+				</span>
+			</div>
+			
+			<div class="text-box">
+				<h3><a href="#">Hover on the picture</a></h3>
+				<p>The img will be dim, and explanation show above it.</p>
+			</div>
+		</div>
+	</div>
+	<p>
+	「&nbsp;&nbsp;hover显示遮罩特效&nbsp;&nbsp;」
+	</p>
+
+
+
+	<p>
+		注意事项：
+		1、前后必须有相同属性，才会在移入和移出时都有动画效果。
+		2、若移入移出时，动画效果不完全一致（一般比如有先后顺序的），移入动画的transition放在hover类里，移除动画的transition放在原本的元素里。（因为当shover时，新的transition属性会覆盖原来的。）
+	</p>
+</div>
+</body>
+</html>
