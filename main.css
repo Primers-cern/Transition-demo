@@ -290,12 +290,16 @@ nav li:hover:after {
 /*demo4*/
 
 .search-bar {
-    overflow: hidden;
-    height: 80px;
-    padding: 0 28px;
-    font-size: 20px;
-    line-height: 80px;
+    position: relative;
+    padding: 20px 30px;
     background: #fdd71c;
+}
+
+.search-bar .search {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    z-index: 99;
 }
 
 .search-bar input {
@@ -317,7 +321,6 @@ nav li:hover:after {
     -webkit-border-radius: 20px;
        -moz-border-radius: 20px;
             border-radius: 20px;
-    /*vertical-align: middle;*/
 }
 
 .search-bar input::-webkit-input-placeholder {
@@ -332,18 +335,19 @@ nav li:hover:after {
     display: none;
 }/*去除ie的input中的叉*/
 
-.search-bar span {
-    height: 40px;
-    line-height: 40px;
+.fa-search {
+    font-size: 22px;
+    position: absolute;
+    right: 9px;
+    top: 8px;
 }
 
 .search-bar .tips {
-    margin-left: 50px;
-    color: #888;
-}
-
-.search-bar .fa {
-    margin-left: -34px;
+   position: absolute;
+   font-size: 22px;
+   top: 25px;
+   left: 80px;
+   color: #aaa;
 }
 
 /*@media screen and (-webkit-min-device-pixel-ratio:0) { 
@@ -353,8 +357,8 @@ nav li:hover:after {
 }*/
 /*兼容webkit内核，使搜索图标居中*/
 
-.search-bar input:hover,
-.search-bar input:focus {
+.search:hover input,
+.search input:focus {
     width: 250px;
     background: #fff;
 }

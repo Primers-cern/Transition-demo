@@ -5,7 +5,6 @@
 	<title>demo</title>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="main.css">
-	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <div class="content">
@@ -31,7 +30,6 @@
 	</div>
 	<p>
 		「&nbsp;&nbsp;hover边框穿梭效果&nbsp;&nbsp;」<br/>
-		——不足：两个角落留下1px的痕迹（高宽度0时的边框）——
 	</p>
 	<div id="demo3">
 		<!-- 选中扩散效果 -->
@@ -50,14 +48,15 @@
 		<!-- 搜索框弹出效果 -->
 		<!-- 未解决缺陷，内部图标遮挡input，阻止动画生成。 -->
 		<div class="search-bar">
-			<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;点击以保持搜索框">
-			<span class="fa fa-search"></span>
+			<div class="search">
+				<input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;点击以保持搜索框">
+				<span class="fa fa-search"></span>
+			</div>
 			<span class="tips">鼠标移入图标中激活</span>
 		</div>
 	</div>
     <p>
     	「&nbsp;&nbsp;hover图标搜索框自动弹出效果&nbsp;&nbsp;」<br/>
-		——存在问题，内部图标遮挡hover导致动画取消——
     </p>
 	<div id="demo5">
 		<!-- 选中元素框特效（下移，层叠） -->
