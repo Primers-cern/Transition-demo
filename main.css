@@ -371,9 +371,16 @@ nav li:hover:after {
     position: relative;
     width: 100%;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #bbb;
     background: #000;
+
+    -webkit-transition: box-shadow .4s ease;
+       -moz-transition: box-shadow .4s ease;
+        -ms-transition: box-shadow .4s ease;
+         -o-transition: box-shadow .4s ease;
+            transition: box-shadow .4s ease;
 }
+
 
 .demo5-box .text-box {
     position: absolute;
@@ -414,6 +421,13 @@ nav li:hover:after {
          -o-transition: transform .4s ease-out, opacity .4s ease;
             transition: transform .4s ease-out, opacity .4s ease;
 }
+
+.demo5-box:hover {
+    -webkit-box-shadow: 0 0 20px -5px;
+       -moz-box-shadow: 0 0 20px -5px;
+            box-shadow: 0 0 20px -5px;
+}
+
 
 .demo5-box:hover img {
     opacity: .8;
